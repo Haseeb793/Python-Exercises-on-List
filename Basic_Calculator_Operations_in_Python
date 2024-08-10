@@ -1,0 +1,26 @@
+# Basic Calculator Program
+
+# Step 1: Take user input for the first number, second number, and the operation
+first_number = float(input("Enter first number: "))
+second_number = float(input("Enter second number: "))
+operation = input("Enter operation (+, -, *, /): ")
+
+# Step 2: Perform the corresponding operation based on user input
+if operation == "+":
+    result = first_number + second_number
+    print(f"Output: {result}")
+elif operation == "-":
+    result = first_number - second_number
+    print(f"Output: {result}")
+elif operation == "*":
+    result = first_number * second_number
+    print(f"Output: {result}")
+elif operation == "/":
+    # Check for division by zero
+    if second_number != 0:
+        result = first_number / second_number
+        print(f"Output: {result}")
+    else:
+        print("Error: Division by zero is not allowed.")
+else:
+    print("Invalid operation. Please enter one of the following: +, -, *, /.")
