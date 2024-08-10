@@ -1,0 +1,8 @@
+# Create a variable poem with a short poem that has multiple lines
+poem = """The sun is shining bright,
+The birds are singing loud,
+Nature's beauty is in sight,
+Wrapped in a gentle cloud."""
+
+# Print the poem
+print(poem)
